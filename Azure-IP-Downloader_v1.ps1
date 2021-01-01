@@ -1,15 +1,15 @@
 ﻿# Azure IP filter and downloader script v1.0
 # Author: Daniel Keer
 # Author URI: https://thedxt.ca
-# Script URI: https://github.com/thedxt/Azure-IP-Downloader
+# Script URI: https://github.com/thedxt/IP-Downloader
 #
 # DESCRIPTION
 #
 # grabs the JSON file for the Azure IP Ranges and Service Tags – Public Cloud
 # script allows for flitering and downloads the ips into one big file
 # it also makes a file just for IPv4 and IPv6
-# the url from MS will need to be replaced as that may change
-# the url is here https://www.microsoft.com/en-us/download/details.aspx?id=56519
+# the uri from MS will need to be replaced as that may change
+# the uri is here https://www.microsoft.com/en-us/download/details.aspx?id=56519
 #
 #
 # change the variables as needed
