@@ -22,7 +22,7 @@ $exportlocation = "C:\temp\"
 $regionFilter = "canada"
 
 #download the JSON file from MS
-$MSjsonDL = Invoke-WebRequest -Uri "https://download.microsoft.com/download/7/1/D/71D86715-5596-4529-9B13-DA13A5DE5B63/ServiceTags_Public_20201228.json"
+$MSjsonDL = Invoke-WebRequest -Uri "https://download.microsoft.com/download/7/1/D/71D86715-5596-4529-9B13-DA13A5DE5B63/ServiceTags_Public_20210104.json"
 
 
 #getting date
