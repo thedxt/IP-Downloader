@@ -1,4 +1,4 @@
-# Azure IP filter and downloader script v1.2.0
+# Azure IP filter and downloader script
 Grabs the JSON file for the Azure IP Ranges and Service Tags – Public Cloud.
 
 Script allows for flitering and downloads the IPs into one big file it also makes a file just for IPv4 and IPv6
