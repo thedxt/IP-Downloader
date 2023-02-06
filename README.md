@@ -20,4 +20,7 @@ The script grabs the json file directly from Microsoft (no more manual updating 
 * deployed fix to auto create the save location if it doesn't exist.
 
 ### Version 1.1.0
+* added DLURI which makes the script grab the MS JSON URI from a TXT file so the script doesn't need to be edited manually each week when MS release a new JSON file.
+
+### Version 1.0.0
 * Intial Release
