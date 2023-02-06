@@ -1,4 +1,4 @@
-# Azure IP filter and downloader script v1.1.0
+# Azure IP filter and downloader script v1.2.0
 # Author: Daniel Keer
 # Author URI: https://thedxt.ca
 # Script URI: https://github.com/thedxt/IP-Downloader
@@ -8,13 +8,24 @@
 # grabs the JSON file for the Azure IP Ranges and Service Tags – Public Cloud
 # script allows for flitering and downloads the ips into one big file
 # it also makes a file just for IPv4 and IPv6
-# the uri from MS will need to be replaced as that may change
-# the uri is here https://www.microsoft.com/en-us/download/details.aspx?id=56519
 #
 # change the variables as needed
 
 #save location
 $exportlocation = "C:\temp\"
+
+# function to check if save location exists if not create it
+function exportloc-check{
+
+if (-not (Test-Path $exportlocation))
+{
+New-Item -ItemType Directory $exportlocation | out-null
+}
+
+}
+
+# run the function
+exportloc-check
 
 #region filter
 $regionFilter = "canada"
