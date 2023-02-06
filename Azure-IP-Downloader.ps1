@@ -1,4 +1,4 @@
-# Azure IP filter and downloader script v1.1.0
+# Azure IP filter and downloader script v1.2.0
 # Author: Daniel Keer
 # Author URI: https://thedxt.ca
 # Script URI: https://github.com/thedxt/IP-Downloader
@@ -15,6 +15,19 @@
 
 #save location
 $exportlocation = "C:\temp\"
+
+# function to check if save location exists if not create it
+function exportloc-check{
+
+if (-not (Test-Path $exportlocation))
+{
+New-Item -ItemType Directory $exportlocation | out-null
+}
+
+}
+
+# run the function
+exportloc-check
 
 #region filter
 $regionFilter = "canada"
